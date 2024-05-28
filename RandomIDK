@@ -1,3 +1,5 @@
+-- ECLIPSE HUB ON TOP!
+
 local o = tick()
 local j = game:GetService("CoreGui")
 local Z = game:GetService("TweenService")
@@ -229,6 +231,13 @@ local function ZK(o)
 		j = j .. string.char(string.byte(Y, o) + 50)
 	end
 	return j
+end
+local function tK(o)
+	local Y = ""
+	for j = 1, string.len(o), 1 do
+		Y = Y .. string.char(string.byte(o, j) - 50)
+	end
+	return jK(Y)
 end
 function x.MakeTask(Z, o, Y, j)
 	if M and not M[o] then
